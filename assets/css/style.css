@@ -62,12 +62,16 @@ p{
     font-size: 15px;
     display: inline-block;
     font-family: var(--main-font);
+    color: var(--main-font-color);
 }
 
 code{
     font-family: var(--main-font);
 }
 
+.cards{
+    display: flex;
+}
 .about-me{
    float: left;
     width: 300px;
@@ -127,8 +131,17 @@ code{
     background-size: cover;
 }
 
+.My-Work ul{
+    margin: 10px;
+    list-style-type: none;
+    font-family: var(--main-font);
+    color: var(--main-font);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
 .github{
-    margin: -605px 5px 0 725px;
+    margin: 20px 5px 0 725px;
     height: 585px;
     width: 375px;
     padding: 20px;
@@ -141,17 +154,24 @@ code{
 }
 
 .github h2{
+    margin: 10px 0 70px 0;
     text-align: center;
     text-decoration: underline;
     font-family: var(--main-font);
     color: var(--main-font-color);
 }
 
+.github a{
+    margin: 10px 10px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
 
 .contact-info{
     height: 150px;
     width: 375px;
-    margin: -5px 5px 10px 340px;
+    margin: -160px 330px 20px;
     border: solid;
     border-width: 5px;
     border-color: var(--card-border);
@@ -161,7 +181,7 @@ code{
 
 }
 
-.contact-info h2{
+.contact-info h3{
     text-align: center;
     color: var(--main-font-color);
     text-decoration: underline;
@@ -186,7 +206,8 @@ code{
     position: absolute;
 }
 
-.contact-me h2{
+.contact-me h3{
+    margin: 10px;
     text-align: center;
     text-decoration: underline;
     font-family: var(--main-font);
@@ -194,6 +215,7 @@ code{
 }
 
 .contact-me form{
+    margin: -20px 20px 0px 0px;
     font-family: var(--main-font);
     color: var(--main-font-color);
     text-decoration: underline;
@@ -217,6 +239,9 @@ footer h3{
 }
 
 @media  screen and (max-width: 400px) {
-
+ .cards{
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
     
 }
