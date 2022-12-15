@@ -3,14 +3,9 @@
     --card-bg: rgb(42, 42, 121);
     --card-border:  rgb(95, 241, 241);
     --main-font-color: blanchedalmond;
-
-
-
-
-    
-
-
-
+    --header-footer-bg: rgb(58, 107, 175);
+    --header-footer-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    --header-footer-font-color: rgb(3, 26, 87);
 }
 
 *{
@@ -28,10 +23,7 @@ body{
     padding: 20px;
     border-bottom: solid;
     border-width: 10px;
-    border-color: var(--card-bg);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(58, 107, 175);
-    color: rgb(3, 26, 87);
+   border-color: var(--header-footer-bg);
 }
 
 .header h1{
@@ -74,8 +66,7 @@ code{
 }
 
 .about-me{
-    display:flex;
-    flex-direction: column;
+   float: left;
     width: 300px;
     height: 750px;
     border: solid;
@@ -83,7 +74,6 @@ code{
     border-width: 5px;
     margin: 20px 10px 10px 10px;
     padding: 20px;
-    float: left;
     background-color: var(--card-bg);
     color: var(--main-font-color);
 
@@ -109,18 +99,15 @@ code{
 }
 
 .My-Work{
-    display: flex;
-    flex-direction: column;
+    display:inline-block;
     width: 375px;
     height: 585px;
     padding: 20px;
     border: solid;
     border-width: 5px;
     border-color: var(--card-border);
-    clear: both;
-   display:inline-block;
-   margin: 20px;
-   background-color: var(--card-bg);
+    margin: 20px;
+    background-color: var(--card-bg);
 }
 
 .My-Work h2{
@@ -138,8 +125,6 @@ code{
 }
 
 .github{
-    display: flex;
-    flex-direction: column;
     margin: -605px 5px 0 725px;
     height: 585px;
     width: 375px;
@@ -160,7 +145,7 @@ code{
 }
 
 
-.contact{
+.contact-info{
     height: 150px;
     width: 375px;
     margin: -5px 5px 10px 340px;
@@ -173,13 +158,13 @@ code{
 
 }
 
-.contact h2{
+.contact-info h2{
     text-align: center;
     color: var(--main-font-color);
     text-decoration: underline;
 }
 
-.contact ul{
+.contact-info ul{
     margin: 5px;
     list-style: none;
     text-align: left;
@@ -212,14 +197,19 @@ code{
     padding: 10px;
 }
 
-.footer{
-    margin: 20px;
+footer{
     padding: 30px;
-    clear: both;
-    font-family: var(--main-font);
-    text-align: center;
+    background-color: var(--header-footer-bg);
+    border-top: solid;
+    border-width: 10px;
+    border-color: var(--card-bg);
+    
 }
 
-.footer h2{
+footer h3{
+    font-family: var(--header-footer-font);
+    color: var(--header-footer-font-color);
+    text-align: center;
     font-size: 15px;
 }
+
