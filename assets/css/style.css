@@ -21,14 +21,17 @@ body{
 
 .header{
     padding: 20px;
-    border-bottom: solid;
+    border-bottom: 10px solid var(--card-bg);
     border-width: 10px;
-   border-color: var(--header-footer-bg);
+    background-color: var(--header-footer-bg);
+
 }
 
 .header h1{
     display: inline-block;
     font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(20, 20, 87);
 }
 
 .header div {
@@ -213,3 +216,7 @@ footer h3{
     font-size: 15px;
 }
 
+@media  screen and (max-width: 400px) {
+
+    
+}
